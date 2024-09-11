@@ -12,19 +12,28 @@ int main(){
 	long a, b, c, num;
 	a = 1;
 	b = 1;
+	c = 1;
+	
 	cout << "Ingrese hasta que numero quiere que se imprima la serie: " << endl;
-	cin >> num; // Determinara cuando el for dejara de ejecutarse
+	cin >> num;
 	
-	for(int i = 1; i <= num; i++){
 	
-	// formula: el siguiente numero ( c ) es la suma de los dos anteriores
-	c = a + b;
-	
+	while( c < num){
+		
+		
+		if(c > num){
+			break;
+		}
+		
 	cout << c << ", " << endl;
+		// formula: el siguiente numero ( c ) es la suma de los dos anteriores
+	
 	// reemplazamos a por el valor de b
 	a = b;
 	// reemplazamos b por el valor de c que es el resultado de la formula
 	b = c;
-}
+
+	}
+	
 	return 0;
 }
