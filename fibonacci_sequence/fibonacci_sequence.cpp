@@ -20,7 +20,7 @@ int main(){
 	
 	while( c < num){
 		
-		
+		c = a + b;
 		if(c > num){
 			break;
 		}
